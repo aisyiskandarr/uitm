@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UiTM e-Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<style>
+    .card {
+    width: 70%; 
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: auto;
+    }
+
+    .row .card {
+        width: 150px; /* Adjust the card width */
+        height: auto; /* Adjust the height dynamically */
+        text-align: center;
+        border-radius: 10px;
+    }
+    .row .card img {
+        height: 150px; /* Set a fixed height for the image */
+       
+    }
+    .row .card-title {
+        font-size: 16px; /* Smaller font for title */
+    }
+    .row .card-text {
+        font-size: 15px; /* Smaller font for text */
+        margin-bottom: 10px;
+        
+    }
+    .row .btn {
+        font-size: 16px; /* Smaller font for button */
+        padding: 4px 8px; /* Reduce button padding */
+        border-radius: 0px 10px 0px 10px;
+    }
+
+    .stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .stat {
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat h3 p {
+            font-size: 2em;
+        }
+</style>
+</style>
+<body>
+    <nav class="sidebar close bg-body-secondary">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="img/uitm-vector-logo.png" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">UiTM e-Profile</span>
+                    <span class="profession">Web Developer</span>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-circle-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                
+                    <li class="nav-link">
+                        <a href="index.html">
+                            <i class="fa-solid fa-house-user icon"></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="about.html">
+                            <i class="fa-solid fa-circle-info icon"></i>
+                            <span class="text nav-text">About</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="contact.html">
+                            <i class="fa-solid fa-address-book icon"></i>
+                            <span class="text nav-text">Contact</span>
+                        </a>
+                    </li>
+                    
+                
+            </div>
+            <div class="bottom-content">
+                <li>
+                    <a href="login.html">
+                        <i class="fa-solid fa-right-from-bracket icon"></i>
+                        <span class="text nav-text">Log Out</span>
+                    </a>
+                </li>   
+
+                <li class="mode">
+                    <div class="moon-sun">
+                        <i class="fa-solid fa-moon icon moon"></i>
+                        <i class="fa-solid fa-sun icon sun"></i>
+                    </div>
+
+                    <span class="mode-text text">Dark Mode</span>
+
+                    <div class="form-switch custom-switch ">
+                        <input class="form-check-input" type="checkbox" id="darkModeToggle"/>
+                        <label class="form-check-label" for="darkModeToggle" id="themeLabel"></label>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="home">
+        <div class="text">UiTM Student eProfile</div>
+        <div class="stats">
+            <div class="stat bg-body-secondary shadow">
+                <h3>150,000+</h3>
+                <p>Students</p>
+            </div>
+            <div class="stat bg-body-secondary shadow">
+                <h3>18</h3>
+                <p>Faculties</p>
+            </div>
+            <div class="stat bg-body-secondary shadow">
+                <h3>35</h3>
+                <p>Campuses</p>
+            </div>
+            <div class="stat  bg-body-secondary shadow">
+                <h3>#11</h3>
+                <p>Nation's Ranking</p>
+            </div>
+        </div>
+        <div class="text">List of Profiles</div>
+        <div class="row row-cols-2 row-cols-md-5 g-1">
+            <div class="col">
+                <div class="card h-100 shadow">
+                  <img src="img/aisy.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Aisy Iskandar Adil Hakim</h5>
+                    <p class="card-text">2024786269</p>
+                  </div>
+                  <a href="profile1.html" class="btn btn-primary">Profile</a>
+                </div>
+             </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="img/ariff.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ariff Azri Zaharudin</h5>
+                  <p class="card-text">2024556419</p>
+                </div>
+                <a href="profile2.html" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="img/fatin.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fatin Nurulainnie</h5>
+                  <p class="card-text">2024779453</p>
+                </div>
+                <a href="profile3.html" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="img/najwa.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nur Najwa Zulaikha</h5>
+                  <p class="card-text">2024553973</p>
+                </div>
+                <a href="profile4.html" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow">
+                <img src="img/ayu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nurul Ayu Hanani</h5>
+                  <p class="card-text">2024916777</p>
+                </div>
+                <a href="profile5.html" class="btn btn-primary">Profile</a>
+              </div>
+            </div>
+            
+        </div>
+    </section>
+    <div style="min-height:30px;"></div>
+    <footer class="bg-dark text-white text-center pt-2">
+        <div class="container-fluid bg-dark">
+            <div class="mb-3">
+                <img src="img/uitm-vector-logo.png" alt="UiTM Logo" style="width: 50px;">
+            </div>
+            <div class="mb-3">
+                <a href="https://www.instagram.com/uitm.official/?hl=en" target="_blank" class="text-white me-3">
+                    <i class="fab fa-instagram fa-lg"></i>
+                </a>
+                <a href="https://www.facebook.com/uitmrasmi/?locale=ms_MY" target="_blank" class="text-white me-4">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="mailto:jaa@uitm.edu.my" target="_blank" class="text-white me-4"> 
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://twitter.com/uitmofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="text-white me-4">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/c/UiTMChannel" target="_blank" class="text-white">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+            <div>
+                <p class="mb-0">
+                    &copy; 2025 Universiti Teknologi MARA (UiTM). All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function setTheme(theme){
+            document.documentElement.setAttribute("data-bs-theme", theme);
+            localStorage.setItem("theme",theme);
+            document.getElementById("themeLabel").innerText =
+                theme === "dark" ? " " : "";
+        }
+
+        document
+            .getElementById("darkModeToggle")
+            .addEventListener("change", function (event){
+                if (event.target.checked) {
+                    setTheme("dark");
+                } else {
+                    setTheme("")
+                }
+            });
+
+        window.onload = function () {
+            let savedTheme = localStorage.getItem("theme");
+            if(savedTheme) {
+                setTheme(savedTheme);
+                if(savedTheme === "dark"){
+                    document.getElementById("darkModeToggle").checked = true;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
